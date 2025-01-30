@@ -1,4 +1,5 @@
-package com.sami.microservices.order.model;
+package com.sami.microservices.inventory.model;
+
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -6,21 +7,17 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.math.BigDecimal;
-
 @Entity
-@Table(name = "t_orders")
-@Setter
+@Table(name ="t_inventory")
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Order {
+public class Inventory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String orderNumber;
     private String skuCode;
-    private BigDecimal price;
     private Integer quantity;
 }
