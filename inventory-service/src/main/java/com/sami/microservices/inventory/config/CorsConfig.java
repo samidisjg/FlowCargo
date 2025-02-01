@@ -16,3 +16,4 @@ class CorsConfig implements WebMvcConfigurer {
                 .allowCredentials(false);
     }
 }
+
