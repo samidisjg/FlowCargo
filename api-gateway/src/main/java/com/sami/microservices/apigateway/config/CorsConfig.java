@@ -1,4 +1,5 @@
-package com.sami.microservices.product.config;
+package com.sami.microservices.apigateway.config;
+
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
