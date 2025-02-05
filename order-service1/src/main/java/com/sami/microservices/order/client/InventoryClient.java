@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.service.annotation.GetExchange;
 
-//@FeignClient(value = "inventory", url = "${inventory.url}")
+//@FeignClient(value = "inventory", url = "${inventory.service.url}")
 public interface InventoryClient {
     Logger log = LoggerFactory.getLogger(InventoryClient.class);
 
